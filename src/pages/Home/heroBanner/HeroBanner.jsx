@@ -16,7 +16,8 @@ const HeroBanner = () => {
   const { url } = useSelector((state) => state.home);
 
   // fetching the posters data with the custom hook 
-  const { data, loding } = useFetch('/movie/popular');
+
+  const { data, loding } = useFetch('/trending/all/week');
 
   useEffect(() => {
     //getting the random background image from fetched posters data
